@@ -1,22 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataTech - Segurança em Datacenters</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header class="cabecalho">
-        <img class="logo" src="./logo-png.png" alt="Logo DataTech">
-        <nav>
-            <a href="">Início</a>
-            <a href="">Sobre nós</a>
-            <a href="">Serviço</a>
-            <a href="">Entrar</a>
-        </nav>
-    </header>
-    <main></main>
-    <footer></footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DataTech - Segurança em Datacenters</title>
+		<link rel="stylesheet" href="./css/style-index.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="cabecalho">
+				<img src="./img/logo-png.png" class="logo" />
+				<div class="mobile-button" onclick="toggle()">
+					<div class="menu-mobile"></div>
+					<div class="menu-mobile"></div>
+					<div class="menu-mobile"></div>
+				</div>
+				<div class="menu-buttons" id="menu">
+					<button href="">Início</button>
+					<button href="">Sobre nós</button>
+					<button href="">Serviço</button>
+					<button href="login.html">Entrar</button>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<div class="card">
+					<h1>titulo legal</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facere aliquid id veritatis
+						temporibus voluptatum iusto sunt, cum iure adipisci ducimus expedita omnis dignissimos
+						aspernatur quidem rerum maxime labore quaerat.
+					</p>
+				</div>
+				<div>
+					<img src="/site/img/logo2.jpg" class="logo2" />
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
 </html>
+<script>
+	function toggle() {
+		var menu = document.getElementById("menu");
+		if (menu.classList.contains("menu-wrapped")) {
+			menu.classList.add("menu-buttons");
+			menu.classList.remove("menu-wrapped");
+		} else {
+			menu.classList.remove("menu-buttons");
+			menu.classList.add("menu-wrapped");
+		}
+	}
+</script>
